@@ -5,6 +5,7 @@ module Fastlane
     class S3ClientHelper
       attr_reader :access_key
       attr_reader :region
+      attr_reader :session_token
 
       def initialize(access_key: nil, secret_access_key: nil, region: nil, s3_client: nil, session_token: nil)
         @access_key = access_key
