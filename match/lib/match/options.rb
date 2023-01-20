@@ -212,6 +212,7 @@ module Match
         FastlaneCore::ConfigItem.new(key: :s3_session_token,
                                      env_name: "MATCH_S3_SESSION_TOKEN",
                                      description: "S3 session token",
+                                     sensitive: true,
                                      optional: true),
         FastlaneCore::ConfigItem.new(key: :s3_secret_access_key,
                                      env_name: "MATCH_S3_SECRET_ACCESS_KEY",

@@ -67,7 +67,7 @@ module Match
                      api_key: nil)
         @s3_bucket = s3_bucket
         @s3_region = s3_region
-        @s3_client = Fastlane::Helper::S3ClientHelper.new(access_key: s3_access_key, secret_access_key: s3_secret_access_key, region: s3_region, session_token: s3_session_token)
+        @s3_client = Fastlane::Helper::S3ClientHelper.new(access_key: s3_access_key, secret_access_key: s3_secret_access_key, region: s3_region, session_token: s3_session_token[0])
         @s3_object_prefix = s3_object_prefix.to_s
         @readonly = readonly
         @username = username
